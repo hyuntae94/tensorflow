@@ -16,11 +16,11 @@ Y = tf.keras.layers.Dense(1)(X)
 model = tf.keras.models.Model(X,Y)
 model.compile(loss='mse')
 
-##모델 학습
+##모델 학습##
 model.fit(독립,종속,epochs=1000, verbose=0)
 # epochs 반복 횟수 , verbose 화면출력X
 model.fit(독립,종속,epochs=10)
 
-##모델 사용
+##모델 사용##
 print(model.predict(독립))
 print(model.predict([[20]]))
